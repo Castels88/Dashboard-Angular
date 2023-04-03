@@ -1,0 +1,24 @@
+.example-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #7cceca;
+}
+.side-sx {
+  width: 20%;
+  background: #e8e9e9;
+}
+.side-dx {
+  width: 80%;
+  background: #7cceca;
+}
+.active {
+  background-color: #7cceca;
+}
+
+.toolbar {
+  background-color: #7cceca;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
