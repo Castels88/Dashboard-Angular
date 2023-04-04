@@ -9,7 +9,7 @@
 }
 .side-dx {
   width: 80%;
-  background: #7cceca;
+  background: #e8e9e9;
 }
 .active {
   background-color: #7cceca;
@@ -17,6 +17,7 @@
 
 .toolbar {
   background-color: #7cceca;
+  margin: 5px;
 }
 
 .example-spacer {
