@@ -1,12 +1,14 @@
-<mat-drawer-container class="example-container">
-  <mat-drawer class="side-sx" mode="side" opened>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side">
     <mat-list role="list">
       <mat-list-item role="listitem" routerLink="pagina1" [routerLinkActive]="'active'">Pagina 1</mat-list-item>
       <mat-list-item role="listitem" routerLink="pagina2" [routerLinkActive]="'active'">Mappa</mat-list-item>
       <mat-list-item role="listitem" routerLink="pagina3" [routerLinkActive]="'active'">Pagina 3</mat-list-item>
     </mat-list>
-  </mat-drawer>
-  <mat-drawer-content class="side-dx">
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+
     <mat-toolbar class="toolbar">
       <span>My App</span>
       <span class="example-spacer"></span>
@@ -18,7 +20,9 @@
         <mat-icon>logout</mat-icon>
       </button>
     </mat-toolbar>
-
+    <button mat-button (click)="sidenav.toggle()">
+      <span class="btn-text">Filtri</span>
+    </button>
     <router-outlet></router-outlet>
-  </mat-drawer-content>
-</mat-drawer-container>
+  </mat-sidenav-content>
+</mat-sidenav-container>

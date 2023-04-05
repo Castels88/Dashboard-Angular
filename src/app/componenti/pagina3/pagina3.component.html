@@ -1,1 +1,9 @@
-<p>pagina3 works!</p>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side">
+    // Contenuto della aside qui
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <button mat-button (click)="sidenav.toggle()"></button>
+    // Contenuto della pagina principale qui
+  </mat-sidenav-content>
+</mat-sidenav-container>

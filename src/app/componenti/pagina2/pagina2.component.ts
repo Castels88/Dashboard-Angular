@@ -19,6 +19,9 @@ export class Pagina2Component implements OnInit, AfterViewInit {
       center: [45.36027725126408, 8.174820415729505],
       zoom: 8,
       scrollWheelZoom: true,
+      maxZoom: 15,
+      minZoom: 8,
+      zoomControl: false,
     });
     const myIcon = L.icon({
       iconUrl: '../../../assets/IMG/marker5.png',
@@ -50,9 +53,6 @@ export class Pagina2Component implements OnInit, AfterViewInit {
     const tiles = L.tileLayer(
       'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       {
-        updateWhenZooming: true,
-        maxZoom: 15,
-        minZoom: 5,
         attribution:
           '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       }
